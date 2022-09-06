@@ -1,8 +1,9 @@
 import React from "react";
+import './Header.css'
 
 function Header() {
     return (
-        <div>Todo List Ihar shuchkov</div>
+        <div className="HeaderText">Todo List Ihar shuchkov</div>
     )
 }
 

@@ -1,0 +1,13 @@
+.ToDo {
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 450px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    
+    border: solid;
+
+}

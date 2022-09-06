@@ -1,4 +1,5 @@
 import React from "react";
+import './Todo.css';
 import { useState } from "react";
 
 function TodoList({todo, setTodo}) {
@@ -15,6 +16,11 @@ function TodoList({todo, setTodo}) {
         let newTodo = [...todo].filter(item => {
             if(item.id == id) {
                 item.isOpened = !isOpened;
+                if (isOpened == false) {
+                    <style>
+                        
+                    </style>
+                }
             }
             return item
         })
@@ -26,7 +32,7 @@ function TodoList({todo, setTodo}) {
         SetValue(title)
     }
 
-    function saveTodo(id) {
+    function SaveTodo(id) {
         let newTodo = [...todo].map(item => {
             if (item.id == id) {
                 item.title = value
@@ -38,10 +44,10 @@ function TodoList({todo, setTodo}) {
     }
 
     return (
-        <div>
+        <div >
             {
                 todo.map(item => (
-                    <div key = {item.id}>
+                    <div className="ToDo" key = {item.id}>
                         {
                             edit == item.id? 
                             <div>
@@ -53,12 +59,12 @@ function TodoList({todo, setTodo}) {
                         {
                             edit == item.id? 
                                 <div>
-                                    <button >Сохранить</button>
+                                    <button onClick={() => SaveTodo(item.id)}>Сохранить</button>
                                 </div>:
                                 <div>
-                                    <button onClick={() => deleteTodo(item.id)}>Удалить</button>
-                                    <button onClick={() => editTodo(item.id, item.title)} >Изменить</button>
-                                    <button onClick={() =>isOpened(item.id)} >Закрыть/открыть</button>
+                                    <button className="delete" onClick={() => deleteTodo(item.id)}>Удалить</button>
+                                    <button className="edit" onClick={() => editTodo(item.id, item.title)} >Изменить</button>
+                                    <button className="openClose" onClick={() =>isOpened(item.id)} >Закрыть/открыть</button>
                                 </div>
                         }
                         

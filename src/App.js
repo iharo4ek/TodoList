@@ -9,27 +9,26 @@ function App() {
   const [todo, setTodo] = useState([
       {
         id: 1,
-        title: 'first todo',
+        title: 'crate first todo',
         isOpened: true
-      },
-      {
-        id: 2,
-        title: 'second todo',
-        isOpened: true
-      },
-      {
-        id: 3,
-        title: 'third todo',
-        isOpened: false
       }
     ]
   )
   
     return (
       <div className="App">
-        <Header/>
-        <AddTodo todo={todo} setTodo={setTodo}/>
-        <TodoList todo = {todo} setTodo={setTodo}/>
+        <div className='Header'>
+          <Header/>
+        </div>
+
+        <div className='Add'>
+          <AddTodo todo={todo} setTodo={setTodo}/>
+        </div>
+        
+        <div className='Todo'>
+          <TodoList todo = {todo} setTodo={setTodo}/>
+        </div>
+        
       </div>
     );
 }
