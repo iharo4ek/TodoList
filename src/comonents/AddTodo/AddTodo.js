@@ -9,6 +9,7 @@ function AddTodo({todo, setTodo}) {
 
     function saveTodo() {
         
+       
         if (value != '' && value != ' ') {
             let newTodo = [...todo];
             
@@ -20,9 +21,8 @@ function AddTodo({todo, setTodo}) {
             } finally {}
             
             let block = document.querySelector('.App');
-            // let height = block.getElementsByClassName.height + 100;
-            // block.getElementsByClassName.height = height;
-            console.log(block.style)
+            block.style.height = block.offsetHeight  + 70+'px';
+            // console.log(block.offsetHeight)
 
 
             newTodo.push({id: newId, title:value, isOpened:true});

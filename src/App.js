@@ -10,7 +10,7 @@ function App() {
       {
         id: 1,
         title: 'crate first todo',
-        isOpened: true
+        status: true
       }
     ]
   )

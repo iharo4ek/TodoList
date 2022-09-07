@@ -9,5 +9,26 @@
     justify-content: center;  
     
     border: solid;
+    text-decoration: none;
+}
 
+
+.delete {
+    margin-left: 10px;
+}
+
+.edit{
+    margin-left: 10px;
+}
+
+.openClose {
+    margin-left: 10px;
+}
+.save{
+    padding-left: 10px;
+}
+
+.Closed {
+    text-decoration: line-through;
+    background-color: chartreuse;
 }
