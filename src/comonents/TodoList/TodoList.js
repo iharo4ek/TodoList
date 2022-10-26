@@ -72,7 +72,6 @@ function TodoList({todo, setTodo}) {
                                     <button className="edit" onClick={() => editTodo(item.id, item.title)} >Изменить</button>
                                     <button className="openClose" onClick={() =>IsOpened(item.id)} >Закрыть/открыть</button>
                                 </div>
-
                         }
                         
                     </div>

@@ -9,12 +9,22 @@
     flex-direction: row;
     justify-content: flex-start;  
     
-    border: solid;
 
+    border: solid;
+    background-color:rgb(255, 255, 0);
+    border-color:	rgb(204, 204, 0);
+
+    
 }
+
 
 .btn {
     padding-left: 20px;
+}
+
+.btn button {
+    background-color:rgb(204, 204, 0);
+    border-color:rgb(255, 255, 102);
 }
 
 

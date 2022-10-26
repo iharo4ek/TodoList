@@ -2,6 +2,10 @@
 
   margin: 50px auto;
   border: solid;
+  border-width:10px;
+  border-radius: 40px;
+  border-color:rgb(204, 204, 0);
+  background-color:rgb(255, 255, 153);
   height: 250px;
   width: 1000px;
 
@@ -15,3 +19,5 @@
 .Header {
   margin-top: 20px;
 }
+
+
